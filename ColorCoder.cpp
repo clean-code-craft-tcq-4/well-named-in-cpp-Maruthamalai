@@ -52,11 +52,11 @@ namespace TelCoColorCoder
     {
         std::cout<<"Major\t"<<"Minor\t"<<"Pair No\n";
 
-        for (MajorColor major = 0; major < count; major++)
+        for (unsigned char major = 0; major < numberOfMajorColors; major++)
         {
-            for (MinorColor minor = 0; minor < count; minor++)
+            for (unsigned char minor = 0; minor < numberOfMinorColors; minor++)
             {
-                int pairNo = GetPairNumberFromColor(major, minor);
+                int pairNo = GetPairNumberFromColor((MajorColor)major, (MinorColor)minor);
                 std::cout<<GetColorFromPairNumber(pairNo).ToString()<<'\t'<<pairNo<<std::endl;
             }
         }
