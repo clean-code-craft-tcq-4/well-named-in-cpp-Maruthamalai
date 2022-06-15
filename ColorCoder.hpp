@@ -1,3 +1,6 @@
+#ifndef COLORCODER_HPP
+#define COLORCODER_HPP
+
 #include "iostream"
 #include "MajorColor.hpp"
 #include "MinorColor.hpp"
@@ -18,3 +21,5 @@ namespace TelCoColorCoder
     ColorPair GetColorFromPairNumber(int pairNumber);
     int GetPairNumberFromColor(MajorColor major, MinorColor minor);
 }
+
+#endif

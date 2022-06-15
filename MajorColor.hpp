@@ -1,3 +1,6 @@
+#ifndef MAJORCOLOR_HPP
+#define MAJORCOLOR_HPP
+
 namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
@@ -10,3 +13,5 @@ namespace TelCoColorCoder
         sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
 
 }
+
+#endif
