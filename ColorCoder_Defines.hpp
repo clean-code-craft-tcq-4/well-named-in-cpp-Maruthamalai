@@ -1,6 +1,8 @@
 
 #ifndef  COLORCODER_DEFINES_HPP
 #define COLORCODER_DEFINES_HPP
+namespace TelCoColorCoder
+{ 
     const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
@@ -15,5 +17,5 @@
     int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-
+}
 #endif

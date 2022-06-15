@@ -4,13 +4,6 @@
 
 namespace TelCoColorCoder
 {
-    const char* MajorColorNames[] = {
-        "White", "Red", "Black", "Yellow", "Violet"
-    };
-
-    int numberOfMajorColors =
-        sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : majorColor(major), minorColor(minor)
     {
     }
@@ -47,20 +40,4 @@ namespace TelCoColorCoder
     {
         return major * numberOfMinorColors + minor + 1;
     }
-
-    void PrintColorCodeTable()
-    {
-        std::cout<<"Major\t"<<"Minor\t"<<"Pair No\n";
-
-        for (unsigned char major = 0; major < numberOfMajorColors; major++)
-        {
-            for (unsigned char minor = 0; minor < numberOfMinorColors; minor++)
-            {
-                int pairNo = GetPairNumberFromColor((MajorColor)major, (MinorColor)minor);
-                std::cout<<GetColorFromPairNumber(pairNo).ToString()<<'\t'<<pairNo<<std::endl;
-            }
-        }
-        
-    }
-
 }

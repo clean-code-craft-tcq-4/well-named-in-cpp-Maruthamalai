@@ -1,4 +1,5 @@
 #include "TestColorCoder.hpp"
+#include "PrintColorCode.hpp"
 
 int main() {
     TelCoColorCoder::PrintColorCodeTable();
