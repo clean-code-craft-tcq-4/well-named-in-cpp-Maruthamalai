@@ -2,8 +2,7 @@
 #define COLORCODER_HPP
 
 #include "iostream"
-#include "MajorColor.hpp"
-#include "MinorColor.hpp"
+#include "ColorTypes.hpp"
 
 namespace TelCoColorCoder
 {
